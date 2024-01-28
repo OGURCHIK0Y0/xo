@@ -1,0 +1,11 @@
+a=(input('введите слово '))
+
+def za(a,indx):
+    if a[indx]!=a[-1-indx]:
+        return 'no'
+    elif indx <(len(a)+1)//2:
+        return za(a,indx+1)
+    else:
+        return "yap"
+print(za(a,0))
+ 
